@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar.vue";
 
 <template>
   <main>
-    <NavBar />
+    <NavBar brandName="Alpha Traders" />
     <h1>Home</h1>
     <span>{{ sayHello() }}</span>
     <p v-if="2 == 2">
@@ -21,7 +21,7 @@ import NavBar from "../components/NavBar.vue";
     <hr />
     <div class="counter">
       <label for="inc">How much Increment: </label>
-      <input type="number" name="ic" id="inc" v-model="incrementBy" />
+      <input type="number" name="ic" id="inc" v-model.number="incrementBy" />
       <p>
         {{ count }}
         <!-- </p>   v-bind:value="incrementBy"
